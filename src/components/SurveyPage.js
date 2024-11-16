@@ -96,10 +96,10 @@ function SurveyPage() {
         <div className="form-section">
           <label>Rank the following areas where AI assistance would be most beneficial: <br></br><br></br>[Note -: Rank from 1-5,  1 being the Least important, 5 being the Most important]</label>
           {[
-    { name: "Q3", text: "Real-time form correction during exercises" },
-    { name: "Q4", text: "Detailed biomechanical analysis of movements" },
-    { name: "Q5", text: "Injury prevention guidance" },
-    { name: "Q6", text: "Performance optimization recommendations" },
+    { name: "Q3", text: "Q3. Real-time form correction during exercises" },
+    { name: "Q4", text: "Q4. Detailed biomechanical analysis of movements" },
+    { name: "Q5", text: "Q5. Injury prevention guidance" },
+    { name: "Q6", text: "Q6. Performance optimization recommendations" },
   ].map((question, index) => (
     <div key={index} className="form-section">
       <label>{question.text}</label>
