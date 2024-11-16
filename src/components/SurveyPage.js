@@ -95,19 +95,23 @@ function SurveyPage() {
         {/* AI Assistance Areas (Q3, Q4, Q5, Q6) */}
         <div className="form-section">
           <label>Rank the following areas where AI assistance would be most beneficial: <br></br><br></br>[Note -: Rank from 1-5,  1 being the Least important, 5 being the Most important]</label>
-          {['Q3. Real-time form correction during exercises', 'Q4. Detailed biomechanical analysis of movements', 'Q5. Injury prevention guidance', 'Q6. Performance optimization recommendations'].map((question, index) => (
-            <div key={index} className="form-section">
-              <label>{`Q${index + 3}. Please rank the importance of this area`}</label>
-              <select name={question} onChange={handleInputChange} required>
-                <option value="">Select</option>
-                {[1, 2, 3, 4, 5].map((num) => (
-                  <option key={num} value={num}>{num}</option>
-                ))}
-              </select>
-            </div>
-          ))}
-        </div>
-
+          {[
+    { name: "Q3", text: "Real-time form correction during exercises" },
+    { name: "Q4", text: "Detailed biomechanical analysis of movements" },
+    { name: "Q5", text: "Injury prevention guidance" },
+    { name: "Q6", text: "Performance optimization recommendations" },
+  ].map((question, index) => (
+    <div key={index} className="form-section">
+      <label>{question.text}</label>
+      <select name={question.name} onChange={handleInputChange} required>
+        <option value="">Select</option>
+        {[1, 2, 3, 4, 5].map((num) => (
+          <option key={num} value={num}>{num}</option>
+        ))}
+      </select>
+    </div>
+  ))}
+</div>
         <div className="form-section">
 
         <h3> For the area you deemed most important, please describe:</h3>
