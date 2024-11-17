@@ -166,11 +166,11 @@ function SurveyPage() {
 
         <label>Q13. What type of feedback would be most helpful? (Select all that apply)</label><br></br>
         <div className="checkbox-group">
-        <label><input type="checkbox" value="Weight training" onChange={(e) => handleCheckboxChange(e, 'Q13')} /> Weight training</label>
-            <label><input type="checkbox" value="Cardio workouts" onChange={(e) => handleCheckboxChange(e, 'Q13')} /> Cardio workouts</label>
-            <label><input type="checkbox" value="Yoga" onChange={(e) => handleCheckboxChange(e, 'Q13')} /> Yoga</label>
-            <label><input type="checkbox" value="Sports" onChange={(e) => handleCheckboxChange(e, 'Q13')} /> Sports</label>
-            <label><input type="checkbox" value="Other" onChange={(e) => handleCheckboxChange(e, 'Q13')} /> Other (please specify)</label>
+        <label><input type="checkbox" value="Visual demonstrations" onChange={(e) => handleCheckboxChange(e, 'Q13')} /> Weight training</label>
+            <label><input type="checkbox" value="Voice instructions" onChange={(e) => handleCheckboxChange(e, 'Q13')} /> Cardio workouts</label>
+            <label><input type="checkbox" value="Written corrections" onChange={(e) => handleCheckboxChange(e, 'Q13')} /> Yoga</label>
+            <label><input type="checkbox" value="Side-by-side comparison with correct form" onChange={(e) => handleCheckboxChange(e, 'Q13')} /> Sports</label>
+            <label><input type="checkbox" value="3D movement analysis" onChange={(e) => handleCheckboxChange(e, 'Q13')} /> Other (please specify)</label>
             {showOtherActivity && <input type="text" name="Q13" onChange={handleInputChange} />}
           </div>
 
